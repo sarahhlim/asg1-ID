@@ -1,15 +1,94 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
-        <title>Jeff Satur Website</title>
-        <link rel="stylesheet" href="normalize.css">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <h1>Jeff Satur</h1>
-    </body>
+
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Jeff Satur - The Red Giant Tour</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
 
+<!-- NAVIGATION BAR -->
+<header class="navbar">
+
+
+
+<div class="nav-center">
+<h1 class="title">Jeff Satur</h1>
+<h2 class="subtitle">the red giant tour</h2>
+</div>
+
+
+<div class="nav-right">
+<a href="index.html" class="nav-btn">Home</a>
+<a href="album.html" class="nav-btn">Album</a>
+<a href="ticket.html" class="nav-btn">Ticket</a>
+<a href="merch.html" class="nav-btn">Merch</a>
+</div>
+</header>
+
+
+<!-- HERO SECTION -->
+<section class="hero">
+
+  <div class="info-box">
+    <p>Jeff Satur is a multi-talented artist renowned for his singing, songwriting, and music production. With over 10 years of experience in the industry, he is currently signed to Wayfer Records under Warner Music Thailand. Jeff is celebrated for his powerful vocals and breakout performances in TV series.</p>
+
+    <p>As a solo artist, Jeff has gained popularity through his cover videos on YouTube and by composing soundtracks for TV series across Asia. Beyond music, he is also an actor, model, brand endorser, and was named a Spotify Radar Artist in 2022. His feature in GQ and his role as a Valentino ambassador have further solidified his status as a fashion icon.</p>
+
+    <p>Jeff's music with Warner Music Thailand spans various genres, including pop, ’80s-inspired sounds, Pop, R&B, and Hip-Hop. Since his debut in November 2021, he has amassed over 1.5 million monthly listeners and built a passionate global fanbase.</p>
+
+    <p>His debut single, "Highway", charted instantly, while hits like "Fade" and "Ghost" both reached #1 on the Spotify Top 200 in Thailand.</p>
+
+    <p>Jeff's debut album, "Space Shuttle No.8", has surpassed 200 million streams on Spotify and earned major awards.</p>
+  </div>
+
+  <section class="concert-section">
+    <h2 class="concert-title">Upcoming concert</h2>
+
+    <div class="concert-row">
+      <span>China, Shanghai</span>
+      <button class="concert-btn soldout">Get Ticket</button>
+    </div>
+
+    <div class="concert-row">
+      <span>Singapore, Singapore</span>
+      <a href="ticket.html" class="concert-btn active">Get Ticket</a>
+    </div>
+
+    <div class="concert-row">
+      <span>Malaysia, Kuala Lumpur</span>
+      <button class="concert-btn soldout">Get Ticket</button>
+    </div>
+  </section>
+
+</section>
+
+<!-- SOLD OUT ALERT -->
+<div id="soldout-alert">Sorry, sold out!</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+<div class="footer-content">
+<div class="footer-item">📞 +65 6900 5109</div>
+<div class="footer-item">📷 jeff satur official</div>
+<div class="footer-item">✉️ jeffsatur_office@gmail.com</div>
+</div>
+</footer>
+
+<script>
+  // Select all sold-out buttons
+  const soldOutButtons = document.querySelectorAll('.soldout');
+
+  // Add click event to show alert
+  soldOutButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      alert("Sorry, sold out!");
+    });
+  });
+</script>
+
+
+</body>
 </html>
