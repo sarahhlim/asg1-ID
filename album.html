@@ -1,0 +1,97 @@
+<!-- index.html -->
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jeff Satur Album Page</title>
+  <link rel="stylesheet" href="album.css" />
+
+</head>
+<body>
+    <header class="navbar">
+        <div class="nav-center">
+            <h1 class="title">Jeff Satur</h1>
+            <h2 class="subtitle">the red giant tour</h2>
+        </div>
+        <div class="nav-right">
+            <a href="index.html" class="nav-btn">Home</a>
+            <a href="album.html" class="nav-btn">Album</a>
+            <a href="ticket.html" class="nav-btn">Ticket</a>
+            <a href="merch.html" class="nav-btn">Merch</a>
+        </div>
+    </header>
+  
+<section class="hero">
+  <div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Search song name..." onkeyup="searchSongs()" />
+  </div>
+
+  <div class="filter-buttons">
+    <button onclick="showAll()">Show All</button>
+    <button onclick="show56()">Red Giant</button>
+  </div>
+
+  <section class="top-songs">
+    <div class="title-box">Top songs of Jeff Satur</div>
+    <div class="songs-grid">
+      <a class="song-card" href="https://open.spotify.com/track/1MARJrjeD1y6JXeTVJALGv?si=008b648f394e454e" target="_blank">
+        <img src="song1.jpg" alt="Song 1" />
+      </a>
+      <a class="song-card" href="https://open.spotify.com/track/759xYXTgNDGU6i6FH4kruy?si=8938b416f450429f" target="_blank">
+        <img src="song2.jpg" alt="Song 2" />
+      </a>
+      <a class="song-card" href="https://open.spotify.com/track/5MeRUPtBTANorTH2kD7Cin?si=57a686b56e6d4554" target="_blank">
+        <img src="song3.jpg" alt="Song 3" />
+      </a>
+      <a class="song-card" href="https://open.spotify.com/track/5zav9TbX94CL4JScexrMmf?si=f6ec70c068454309" target="_blank">
+        <img src="song4.jpg" alt="Song 4" />
+      </a>
+      <a class="song-card" href="https://open.spotify.com/track/696uGMAl9zlkeVqZZIqTRQ?si=27f77ce3c4c646d2" target="_blank">
+        <img src="song5.jpg" alt="Song 5" />
+      </a>
+      <a class="song-card" href="https://open.spotify.com/track/1J3GbxWuytxgEjd0Gl0op0?si=e7490822e23741ae" target="_blank">
+        <img src="song6.jpg" alt="Song 6" />
+      </a>
+    </div>
+  </section>
+</section>
+    <footer class="footer">
+        <div class="footer-content">
+        <div class="footer-item">📞 +65 6900 5109</div>
+        <div class="footer-item">📷 jeff satur official</div>
+        <div class="footer-item">✉️ jeffsatur_office@gmail.com</div>
+        </div>
+    </footer>
+    <script>
+    function showAll() {
+      document.querySelectorAll('.song-card').forEach(card => {
+        card.style.display = 'inline-block';
+      });
+    }
+
+    function show56() {
+      document.querySelectorAll('.song-card').forEach((card, index) => {
+        if (index === 4 || index === 5) {
+          card.style.display = 'inline-block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+      function searchSongs() {
+      const input = document.getElementById('searchInput').value.toLowerCase();
+      const cards = document.querySelectorAll('.song-card');
+      const names = ["ride or die", "ghost", "black tie", "why don't you stay", "fade", "stranger"]; // change if you have real names
+
+      cards.forEach((card, index) => {
+        if (names[index].toLowerCase().includes(input)) {
+          card.style.display = 'inline-block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+  </script>
+</body>
+</html>
