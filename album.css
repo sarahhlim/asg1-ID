@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Gamja+Flower&display=swap');
+
+
 * {
   margin: 0;
   padding: 0;
@@ -200,13 +203,14 @@ a {
 }
 
 .title-box {
-  background-color: rgba(255, 255, 255, 0.7);
-  color: black;
+  background-color: rgba(98, 0, 0, 0.7);
+  color: rgb(255, 255, 255);
   padding: 10px 20px;
   display: inline-block;
   margin-bottom: 30px;
-  font-size: 18px;
-  border-radius: 6px;
+  font-size: 50px;
+  border-radius: 10px;
+  font-family: 'Caveat Brush', cursive;  /* <-- FONT APPLIED HERE */
 }
 
 .songs-grid {
