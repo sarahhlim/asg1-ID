@@ -69,6 +69,30 @@
           <img src="song6.jpg" alt="Song 6" />
         </a>
 
+        <a class="song-card" href="https://open.spotify.com/track/1909dtkeHMMoMJK7YuRZWs?si=0c2d9ad2701648b5" target="_blank">
+          <img src="song7.jpg" alt="Song 7" />
+        </a>
+
+        <a class="song-card" href="https://open.spotify.com/track/0sy9KKtn79mAumL6ImSjoI?si=bc09cba477ed4dee" target="_blank">
+          <img src="song8.jpg" alt="Song 8" />
+        </a>
+
+        <a class="song-card" href="https://open.spotify.com/track/1Zs1mY4oMeFWqrzfY4jDid?si=77386a13090b4d99" target="_blank">
+          <img src="song9.jpg" alt="Song 9" />
+        </a>
+
+        <a class="song-card" href="https://open.spotify.com/track/2hFpbQpaRHlZhtrYlXIltT?si=8bb71ef08cb44daf" target="_blank">
+          <img src="song10.jpg" alt="Song 10" />
+        </a>
+
+        <a class="song-card" href="https://open.spotify.com/track/0iYuD0cWYnAOCWjRCAw9Kn?si=f357c72c3d9b49ae" target="_blank">
+          <img src="song11.jpg" alt="Song 11" />
+        </a>
+
+        <a class="song-card" href="https://open.spotify.com/track/6hwXJnItGPKx9BpP9cjpuk?si=3acd0e33b66c452b" target="_blank">
+          <img src="song12.jpg" alt="Song 12" />
+        </a>
+
       </div>
     </section>
 
@@ -94,45 +118,56 @@
   </footer>
 
   <!-- JAVASCRIPT -->
-  <script>
-    function showAll() {
-      document.querySelectorAll('.song-card').forEach(card => {
+<script>
+  function showAll() {
+    document.querySelectorAll('.song-card').forEach(card => {
+      card.style.display = 'inline-block';
+    });
+  }
+
+  // Show only Red Giant songs: 5, 6, 7, 10, 11 
+  // (array index starts from 0 → 4,5,6,9,10)
+  function show56() {
+    document.querySelectorAll('.song-card').forEach((card, index) => {
+      if (index === 4 || index === 5 || index === 6 || index === 9 || index === 10) {
         card.style.display = 'inline-block';
-      });
-    }
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }
 
-    function show56() {
-      document.querySelectorAll('.song-card').forEach((card, index) => {
-        if (index === 4 || index === 5) {
-          card.style.display = 'inline-block';
-        } else {
-          card.style.display = 'none';
-        }
-      });
-    }
+  // SEARCH FUNCTION — now includes all 12 songs
+  function searchSongs() {
+    const input = document.getElementById('searchInput').value.toLowerCase();
+    const cards = document.querySelectorAll('.song-card');
 
-    function searchSongs() {
-      const input = document.getElementById('searchInput').value.toLowerCase();
-      const cards = document.querySelectorAll('.song-card');
+    // Add names for song1–song12 in order
+    const names = [
+      "ride or die",
+      "ghost",
+      "black tie",
+      "why don't you stay",
+      "fade",
+      "stranger",
+      "dum dum",
+      "loop",
+      "highway",
+      "tell me the name",
+      "lucid",
+      "golden night"
+    ];
 
-      const names = [
-        "ride or die",
-        "ghost",
-        "black tie",
-        "why don't you stay",
-        "fade",
-        "stranger"
-      ];
+    cards.forEach((card, index) => {
+      if (names[index].toLowerCase().includes(input)) {
+        card.style.display = 'inline-block';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }
+</script>
 
-      cards.forEach((card, index) => {
-        if (names[index].toLowerCase().includes(input)) {
-          card.style.display = 'inline-block';
-        } else {
-          card.style.display = 'none';
-        }
-      });
-    }
-  </script>
 
 </body>
 </html>
