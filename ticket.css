@@ -1,0 +1,242 @@
+/* ----------------------------------------------------------
+   GLOBAL RESET
+---------------------------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+  background: #0d0d0d;
+  color: white;
+}
+
+/* ----------------------------------------------------------
+   NAVIGATION BAR
+---------------------------------------------------------- */
+.navbar {
+  background: url(header.jpg);
+  background-position: 0px 40px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.nav-center {
+  text-align: center;
+}
+
+.title {
+  font-size: 38px;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 20px;
+  font-style: italic;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.nav-right .nav-btn {
+  background: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #000;
+  margin-left: 10px;
+  font-size: 20px;
+  transition: 0.3s;
+  font-family: 'Caveat', serif;
+}
+
+.nav-right .nav-btn:hover {
+  background: #3a0000;
+  color: #fff;
+}
+
+/* ----------------------------------------------------------
+   POSTER IMAGE SECTION
+---------------------------------------------------------- */
+.poster-section {
+    margin-top: 100px;
+  margin-bottom: 60px;    /* spacing before layout */
+}
+
+.poster-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* ----------------------------------------------------------
+   MAIN LAYOUT (3-column)
+---------------------------------------------------------- */
+.layout {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 1500px;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 200px; /* avoid footer overlap */
+}
+
+/* ----------------------------------------------------------
+   SIDEBAR CARDS
+---------------------------------------------------------- */
+.sidebar {
+  background: #1a1a1a;
+  width: 260px;
+  padding: 25px;
+  border-radius: 15px;
+  border: 1px solid #aa0000;
+  box-shadow: 0 0 10px #aa0000;
+}
+
+.sidebar h2 {
+  color: #ff4444;
+  margin-bottom: 10px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+.color-box {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+}
+
+table {
+  width: 100%;
+  margin-top: 15px;
+}
+
+table td {
+  padding: 6px 0;
+}
+
+table tr td:last-child {
+  text-align: right;
+}
+
+/* ----------------------------------------------------------
+   CENTER COLUMN
+---------------------------------------------------------- */
+.center {
+  width: 550px;
+  text-align: center;
+}
+
+.stage {
+  width: 70%;
+  margin: 0 auto 25px auto;
+  padding: 12px;
+  background: #aa0000;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 6px;
+}
+
+/* Category blocks */
+.section {
+  padding: 40px 20px;
+  margin-bottom: 18px;
+  border-radius: 10px;
+  font-size: 22px;
+  cursor: pointer;
+  transition: 0.2s;
+  font-weight: bold;
+  border: 2px solid transparent;
+}
+
+.section:hover {
+  transform: scale(1.02);
+  border: 2px solid white;
+}
+
+.cat1 { background: #d93636; }
+.cat2 { background: #d96c1e; }
+.cat3 { background: #46a758; }
+.cat4 { background: #4a78e6; }
+.cat5 { background: #9b55e0; }
+
+.cat5-link {
+  text-decoration: none;   /* remove underline */
+  color: inherit;          /* keep same text color */
+  display: block;          /* prevents weird spacing */
+}
+
+.cat5-link:hover {
+  color: inherit;          /* keep same hover color unless you customize */
+}
+
+/* ----------------------------------------------------------
+   FOOTER
+---------------------------------------------------------- */
+.footer {
+  background: url(header.jpg);
+  background-position: 0px 40px;
+  padding: 20px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+}
+
+/* ICON BUTTONS */
+.footer-icon-btn {
+  width: 45px;
+  height: 45px;
+  background: #1a1a1a;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 2px solid #aa0000;
+  box-shadow: 0 0 10px #aa0000;
+
+  transition: 0.25s ease;
+}
+
+.footer-icon-btn img {
+  width: 24px;
+  height: 24px;
+  filter: brightness(90%);
+}
+
+/* GLOW HOVER */
+.footer-icon-btn:hover {
+  transform: scale(1.15);
+  border-color: #ff0000;
+  box-shadow: 0 0 15px #ff0000, 0 0 25px #ff0000;
+}
+
+.footer-icon-btn:hover img {
+  filter: brightness(120%);
+}

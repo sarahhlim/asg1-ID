@@ -16,7 +16,8 @@ html, body {
 
 /* NAVIGATION BAR */
 .navbar {
-  background: #5a0f0f;
+  background: url(header.jpg);
+  background-position: 0px 40px;
   padding: 20px;
   display: flex;
   align-items: center;
@@ -66,28 +67,53 @@ html, body {
 
 /* FOOTER */
 .footer {
-  background: #5a0f0f;
-  padding: 20px 40px;
-  color: white;
-  position: fixed;   /* makes it stay on screen */
-  bottom: 0;         /* stick to bottom */
-  left: 0;
+  background: url(header.jpg);
+  background-position: 0px 40px;
+  padding: 20px 0;
+  position: fixed;
+  bottom: 0;
   width: 100%;
-  z-index: 999;      /* stays above background */
+  z-index: 999;
 }
 
 .footer-content {
   display: flex;
-  justify-content: space-around;
-  max-width: 900px;
-  margin: auto;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
 }
 
-.footer-item {
-  font-size: 16px;
+/* ICON BUTTONS */
+.footer-icon-btn {
+  width: 45px;
+  height: 45px;
+  background: #1a1a1a;
+  border-radius: 50%;
   display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 10px;
+
+  border: 2px solid #aa0000;
+  box-shadow: 0 0 10px #aa0000;
+
+  transition: 0.25s ease;
+}
+
+.footer-icon-btn img {
+  width: 24px;
+  height: 24px;
+  filter: brightness(90%);
+}
+
+/* GLOW HOVER */
+.footer-icon-btn:hover {
+  transform: scale(1.15);
+  border-color: #ff0000;
+  box-shadow: 0 0 15px #ff0000, 0 0 25px #ff0000;
+}
+
+.footer-icon-btn:hover img {
+  filter: brightness(120%);
 }
 
 .hero {

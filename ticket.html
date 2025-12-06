@@ -1,6 +1,150 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <p>this is the ticket page</p>        
-    </head>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Jeff Satur - The Red Giant Tour</title>
+<link rel="stylesheet" href="ticket.css" />
+</head>
+<body>
+
+
+<!-- NAVIGATION BAR -->
+<body>
+
+<!-- NAVIGATION BAR -->
+<header class="navbar">
+  <div class="nav-center">
+    <h1 class="title">Jeff Satur</h1>
+    <h2 class="subtitle">the red giant tour</h2>
+  </div>
+
+  <div class="nav-right">
+    <a href="index.html" class="nav-btn">Home</a>
+    <a href="album.html" class="nav-btn">Album</a>
+    <a href="ticket.html" class="nav-btn">Ticket</a>
+    <a href="merch.html" class="nav-btn">Merch</a>
+  </div>
+</header>
+
+<!-- MAIN POSTER IMAGE -->
+<section class="poster-section">
+  <img src="jeffsatur_tour.webp" alt="Jeff Satur Tour Poster" class="poster-img">
+</section>
+
+<div class="layout">
+
+    <!-- LEFT CARD -->
+    <div class="sidebar">
+        <h2>Price & Legend</h2>
+
+        <p><b>Categories</b></p>
+        <br>
+        <div class="legend-item">
+            <div class="color-box" style="background:#d93636;"></div> Cat 1 — Stalls
+        </div>
+        <div class="legend-item">
+            <div class="color-box" style="background:#d96c1e;"></div> Cat 2 — Circle 1, Premier Boxes
+        </div>
+        <div class="legend-item">
+            <div class="color-box" style="background:#46a758;"></div> Cat 3 — Circle 2
+        </div>
+        <div class="legend-item">
+            <div class="color-box" style="background:#4a78e6;"></div> Cat 4 — Circle 3
+        </div>
+        <div class="legend-item">
+            <div class="color-box" style="background:#9b55e0;"></div> Cat 5 — Box A/B
+        </div>
+
+        <p><b>Price Table</b></p>
+        <table>
+            <tr><td>Cat 1</td><td>$198</td></tr>
+            <tr><td>Cat 2</td><td>$178</td></tr>
+            <tr><td>Cat 3</td><td>$158</td></tr>
+            <tr><td>Cat 4</td><td>$138</td></tr>
+            <tr><td>Cat 5</td><td>$118</td></tr>
+        </table>
+    </div>
+    <!-- CENTER SEATING -->
+    <div class="center">
+        <div class="stage">STAGE</div>
+
+        <div class="section cat1 soldout">Cat 1 — Stalls</div>
+        <div class="section cat2 soldout">Cat 2 — Circle 1 & Premier Boxes</div>
+        <div class="section cat3 soldout">Cat 3 — Circle 2</div>
+        <div class="section cat4 soldout">Cat 4 — Circle 3</div>
+
+        <!-- Cat 5 goes to payment page -->
+        <a href="payment.html" class="cat5-link">
+            <div class="section cat5">Cat 5 — Box A/B</div>
+        </a>
+    </div>
+
+    <!-- RIGHT CARD (duplicate or different?) -->
+    <div class="sidebar">
+        <h2>Price & Legend</h2>
+
+        <p><b>Categories</b></p>
+        <br>
+        <div class="legend-item">
+            <div class="color-box" style="background:#d93636;"></div> Cat 1 — Stalls
+        </div>
+        <div class="legend-item">
+            <div class="color-box" style="background:#d96c1e;"></div> Cat 2 — Circle 1, Premier Boxes
+        </div>
+        <div class="legend-item">
+            <div class="color-box" style="background:#46a758;"></div> Cat 3 — Circle 2
+        </div>
+        <div class="legend-item">
+            <div class="color-box" style="background:#4a78e6;"></div> Cat 4 — Circle 3
+        </div>
+        <div class="legend-item">
+            <div class="color-box" style="background:#9b55e0;"></div> Cat 5 — Box A/B
+        </div>
+
+        <p><b>Price Table</b></p>
+        <table>
+            <tr><td>Cat 1</td><td>$198</td></tr>
+            <tr><td>Cat 2</td><td>$178</td></tr>
+            <tr><td>Cat 3</td><td>$158</td></tr>
+            <tr><td>Cat 4</td><td>$138</td></tr>
+            <tr><td>Cat 5</td><td>$118</td></tr>
+        </table>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-content">
+
+    <a href="https://www.tiktok.com/@jeffsatur" target="_blank" class="footer-icon-btn" title="TikTok">
+      <img src="tiktok.webp" alt="TikTok">
+    </a>
+
+    <a href="https://www.instagram.com/jeffsatur" target="_blank" class="footer-icon-btn" title="Instagram">
+      <img src="igwhite.webp" alt="Instagram">
+    </a>
+
+    <a href="mailto:wayferrecords@gmail.com" class="footer-icon-btn" title="Email">
+      <img src="mail.png" alt="Gmail">
+    </a>
+
+  </div>
+</footer>
+
+<script>
+  // Select all sold-out buttons
+  const soldOutButtons = document.querySelectorAll('.soldout');
+
+  // Add click event to show alert
+  soldOutButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      alert("Sorry, sold out!");
+    });
+  });
+</script>
+
+
+</body>
 </html>
