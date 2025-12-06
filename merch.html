@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jeff Satur Merch</title>
+<link rel="stylesheet" href="merch.css" />
+
+<script>
+    function addToCart(itemName) {
+        alert(itemName + " added to cart!");
+    }
+</script>
+</head>
+
+<body>
+
+<div class="header">
+    Jeff Satur
+    <div class="subheader">the red giant tour</div>
+</div>
+<header class="navbar">
+  <div class="nav-center">
+    <h1 class="title">Jeff Satur</h1>
+    <h2 class="subtitle">the red giant tour</h2>
+  </div>
+
+  <div class="nav-right">
+    <a href="index.html" class="nav-btn">Home</a>
+    <a href="album.html" class="nav-btn">Album</a>
+    <a href="ticket.html" class="nav-btn">Ticket</a>
+    <a href="merch.html" class="nav-btn">Merch</a>
+  </div>
+</header>
+
+<div class="merch-header">
+    Jeff Satur Merch
+</div>
+
+<!-- MERCH GRID -->
+<div class="container">
+
+    <!-- ITEM 1 -->
+    <div class="item">
+        <img src="shirt-black.jpg" alt="Black T-Shirt">
+        <div class="item-title">Red Giant T-Shirt (Black)</div>
+        <div class="price">SGD 45</div>
+
+        <div class="options">
+            Size:<br>
+            <label><input type="radio" name="size1"> S</label>
+            <label><input type="radio" name="size1"> M</label>
+            <label><input type="radio" name="size1"> L</label>
+            <label><input type="radio" name="size1"> XL</label>
+        </div>
+
+        <button class="add-btn" onclick="addToCart('Black T-Shirt')">
+            Add to Cart
+        </button>
+    </div>
+
+    <!-- ITEM 2 -->
+    <div class="item">
+        <img src="keychain.jpg" alt="Keychain">
+        <div class="item-title">Red Giant Keychain</div>
+        <div class="price">SGD 20</div>
+
+        <div class="options">
+            Color:<br>
+            <label><input type="radio" name="keycolor"> Red</label>
+            <label><input type="radio" name="keycolor"> Silver</label>
+        </div>
+
+        <button class="add-btn" onclick="addToCart('Keychain')">
+            Add to Cart
+        </button>
+    </div>
+
+    <!-- ITEM 3 -->
+    <div class="item">
+        <img src="umbrella.jpg" alt="Umbrella">
+        <div class="item-title">Red Giant Umbrella</div>
+        <div class="price">SGD 35</div>
+
+        <div class="options">
+            Color:<br>
+            <label><input type="radio" name="umbcolor"> Black</label>
+            <label><input type="radio" name="umbcolor"> Grey</label>
+        </div>
+
+        <button class="add-btn" onclick="addToCart('Umbrella')">
+            Add to Cart
+        </button>
+    </div>
+
+    <!-- ITEM 4 -->
+    <div class="item">
+        <img src="shirt-red.jpg" alt="Red T-Shirt">
+        <div class="item-title">Red Giant T-Shirt (Red)</div>
+        <div class="price">SGD 55</div>
+
+        <div class="options">
+            Size:<br>
+            <label><input type="radio" name="size2"> S</label>
+            <label><input type="radio" name="size2"> M</label>
+            <label><input type="radio" name="size2"> L</label>
+            <label><input type="radio" name="size2"> XL</label>
+        </div>
+
+        <button class="add-btn" onclick="addToCart('Red T-Shirt')">
+            Add to Cart
+        </button>
+    </div>
+</div>
+
+<div class="paymentbutton">
+    <a href="payment.html">
+        <button class="pay-btn">Proceed to Payment</button>
+    </a>
+</div>
+
+<footer class="footer">
+  <div class="footer-content">
+
+    <a href="https://www.tiktok.com/@jeffsatur" target="_blank" class="footer-icon-btn" title="TikTok">
+      <img src="tiktok.webp" alt="TikTok">
+    </a>
+
+    <a href="https://www.instagram.com/jeffsatur" target="_blank" class="footer-icon-btn" title="Instagram">
+      <img src="igwhite.webp" alt="Instagram">
+    </a>
+
+    <a href="mailto:wayferrecords@gmail.com" class="footer-icon-btn" title="Email">
+      <img src="mail.png" alt="Gmail">
+    </a>
+
+  </div>
+</footer>
+
+</body>
+</html>
