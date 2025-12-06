@@ -18,7 +18,7 @@ html, body {
 
 /* NAVIGATION BAR */
 .navbar {
-  background: url(header.jpg);
+  background: transparent;
   background-position: 0px 40px;
   padding: 20px;
   display: flex;
@@ -66,31 +66,15 @@ html, body {
 .hero {
   width: 100vw;
   min-height: 100vh; /* allow height to expand with content */
-  background-image: url("jeffsatur_bg.jpg");
+  background-image: url("jeffhome.png");
   background-size: cover;
   background-position: center;
-  position: relative;
+  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-repeat: no-repeat;
-  padding-top: 120px; /* space for navbar */
-}
-
-.info-box {
-  position:absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%);
-  background: rgba(87, 0, 0, 0.7);
-  color: white;
-  width: 50%;
-  padding: 40px;
-  text-align: center;
-  font-size: 20px;
-  overflow-y: auto;
-  max-height: 300px;
-  margin-top: 100px;
+  padding-top: 160px; /* space for navbar */
 }
 
 
@@ -101,14 +85,13 @@ html, body {
 
 /* FOOTER */
 .footer {
-  background: url(header.jpg);
+  background: transparent;
   background-position: 0px 40px;
   padding: 20px 0;
   position: fixed;
   bottom: 0;
   width: 100%;
   z-index: 999;
-  margin-top: 100px;
 }
 
 .footer-content {
@@ -152,15 +135,16 @@ html, body {
 }
 
 .concert-section {
-  background:url(redbg.jpg);
+  background:url(black.png);
   color: rgb(255, 255, 255);
   padding: 40px 20px;
   text-align: center;
   font-family: 'Cinzel', serif;
-  margin-top: 40px;
+  margin-top: 300px;
 }
 
 .concert-title {
+  align-content: center;
   font-size: 30px;
   margin-bottom: 40px;
 }
