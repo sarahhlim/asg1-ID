@@ -3,16 +3,14 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Jeff Satur - The Red Giant Tour</title>
+<title>Jeff Satur Ticket Pager</title>
 <link rel="stylesheet" href="ticket.css" />
 </head>
 <body>
 
 
-<!-- NAVIGATION BAR -->
 <body>
 
-<!-- NAVIGATION BAR -->
 <header class="navbar">
   <div class="nav-center">
     <h1 class="title">Jeff Satur</h1>
@@ -27,14 +25,11 @@
   </div>
 </header>
 
-<!-- MAIN POSTER IMAGE -->
 <section class="poster-section">
   <img src="jeffsatur_tour.webp" alt="Jeff Satur Tour Poster" class="poster-img">
 </section>
 
 <div class="layout">
-
-    <!-- LEFT CARD -->
     <div class="sidebar">
         <h2>Price & Legend</h2>
 
@@ -65,7 +60,7 @@
             <tr><td>Cat 5</td><td>$118</td></tr>
         </table>
     </div>
-    <!-- CENTER SEATING -->
+
     <div class="center">
         <div class="stage">STAGE</div>
 
@@ -73,14 +68,11 @@
         <div class="section cat2 soldout">Cat 2 — Circle 1 & Premier Boxes</div>
         <div class="section cat3 soldout">Cat 3 — Circle 2</div>
         <div class="section cat4 soldout">Cat 4 — Circle 3</div>
-
-        <!-- Cat 5 goes to payment page -->
         <a href="payment.html" class="cat5-link">
             <div class="section cat5">Cat 5 — Box A/B</div>
         </a>
     </div>
 
-    <!-- RIGHT CARD (duplicate or different?) -->
     <div class="sidebar">
         <h2>Price & Legend</h2>
 
@@ -114,7 +106,6 @@
 
 </div>
 
-<!-- FOOTER -->
 <footer class="footer">
   <div class="footer-content">
 
@@ -134,10 +125,7 @@
 </footer>
 
 <script>
-  // Select all sold-out buttons
   const soldOutButtons = document.querySelectorAll('.soldout');
-
-  // Add click event to show alert
   soldOutButtons.forEach(button => {
     button.addEventListener('click', () => {
       alert("Sorry, sold out!");

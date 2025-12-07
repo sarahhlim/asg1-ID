@@ -1,6 +1,4 @@
-/* ----------------------------------------------------------
-   GLOBAL RESET
----------------------------------------------------------- */
+
 * {
   margin: 0;
   padding: 0;
@@ -15,9 +13,6 @@ html, body {
   color: white;
 }
 
-/* ----------------------------------------------------------
-   NAVIGATION BAR
----------------------------------------------------------- */
 .navbar {
   background: url(header.jpg);
   background-position: 0px 40px;
@@ -64,12 +59,9 @@ html, body {
   color: #fff;
 }
 
-/* ----------------------------------------------------------
-   POSTER IMAGE SECTION
----------------------------------------------------------- */
 .poster-section {
     margin-top: 100px;
-  margin-bottom: 60px;    /* spacing before layout */
+  margin-bottom: 60px;  
 }
 
 .poster-img {
@@ -79,9 +71,6 @@ html, body {
   object-fit: cover;
 }
 
-/* ----------------------------------------------------------
-   MAIN LAYOUT (3-column)
----------------------------------------------------------- */
 .layout {
   display: flex;
   justify-content: center;
@@ -90,12 +79,9 @@ html, body {
   max-width: 1500px;
   width: 100%;
   margin: 0 auto;
-  padding-bottom: 200px; /* avoid footer overlap */
+  padding-bottom: 200px; 
 }
 
-/* ----------------------------------------------------------
-   SIDEBAR CARDS
----------------------------------------------------------- */
 .sidebar {
   background: #1a1a1a;
   width: 260px;
@@ -136,9 +122,6 @@ table tr td:last-child {
   text-align: right;
 }
 
-/* ----------------------------------------------------------
-   CENTER COLUMN
----------------------------------------------------------- */
 .center {
   width: 550px;
   text-align: center;
@@ -155,7 +138,6 @@ table tr td:last-child {
   border-radius: 6px;
 }
 
-/* Category blocks */
 .section {
   padding: 40px 20px;
   margin-bottom: 18px;
@@ -179,18 +161,15 @@ table tr td:last-child {
 .cat5 { background: #9b55e0; }
 
 .cat5-link {
-  text-decoration: none;   /* remove underline */
-  color: inherit;          /* keep same text color */
-  display: block;          /* prevents weird spacing */
+  text-decoration: none;  
+  color: inherit;         
+  display: block;          
 }
 
 .cat5-link:hover {
-  color: inherit;          /* keep same hover color unless you customize */
+  color: inherit;         
 }
 
-/* ----------------------------------------------------------
-   FOOTER
----------------------------------------------------------- */
 .footer {
   background: url(header.jpg);
   background-position: 0px 40px;
@@ -208,7 +187,6 @@ table tr td:last-child {
   align-items: center;
 }
 
-/* ICON BUTTONS */
 .footer-icon-btn {
   width: 45px;
   height: 45px;
@@ -230,7 +208,6 @@ table tr td:last-child {
   filter: brightness(90%);
 }
 
-/* GLOW HOVER */
 .footer-icon-btn:hover {
   transform: scale(1.15);
   border-color: #ff0000;

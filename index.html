@@ -3,13 +3,11 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Jeff Satur - The Red Giant Tour</title>
+<title>Jeff Satur Home Page</title>
 <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-
-<!-- NAVIGATION BAR -->
 <header class="navbar">
 <div class="nav-center">
 <h1 class="title">Jeff Satur</h1>
@@ -23,8 +21,6 @@
 </div>
 </header>
 
-
-<!-- HERO SECTION -->
 <section class="hero">
   <section class="concert-section">
     <h2 class="concert-title">Upcoming concert</h2>
@@ -46,40 +42,29 @@
   </section>
 </section>
 
-<!-- SOLD OUT ALERT -->
 <div id="soldout-alert">Sorry, sold out!</div>
 
-<!-- FOOTER -->
 <footer class="footer">
   <div class="footer-content">
-
     <a href="https://www.tiktok.com/@jeffsatur" target="_blank" class="footer-icon-btn" title="TikTok">
       <img src="tiktok.webp" alt="TikTok">
     </a>
-
     <a href="https://www.instagram.com/jeffsatur" target="_blank" class="footer-icon-btn" title="Instagram">
       <img src="igwhite.webp" alt="Instagram">
     </a>
-
     <a href="mailto:wayferrecords@gmail.com" class="footer-icon-btn" title="Email">
       <img src="mail.png" alt="Gmail">
     </a>
-
   </div>
 </footer>
 
 <script>
-  // Select all sold-out buttons
   const soldOutButtons = document.querySelectorAll('.soldout');
-
-  // Add click event to show alert
   soldOutButtons.forEach(button => {
     button.addEventListener('click', () => {
       alert("Sorry, sold out!");
     });
   });
 </script>
-
-
 </body>
 </html>

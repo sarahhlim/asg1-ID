@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<HTML>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,9 +9,7 @@
 <body>
     
 <div class="payment-box">
-
     <h1>Payment Details</h1>
-
     <form id="paymentForm">
 
         <label>Full Name</label>
@@ -35,12 +33,9 @@
 
         <button type="submit" class="btn pay-btn">Pay Now</button>
         <button type="button" class="btn back-btn" onclick="window.location.href='index.html';">Back to Home</button>
-
     </form>
 
-
 <script>
-// Detect card type
 document.getElementById("card").addEventListener("input", function () {
     const num = this.value;
     const label = document.getElementById("card-type");
@@ -58,7 +53,7 @@ document.getElementById("card").addEventListener("input", function () {
     }
 });
 
-// Form validation
+
 document.getElementById("paymentForm").addEventListener("submit", function(event) {
     event.preventDefault();
 
@@ -76,7 +71,7 @@ document.getElementById("paymentForm").addEventListener("submit", function(event
         return;
     }
 
-    alert("Payment Successful! Thank you for your purchase.");
+    alert("Payment Successful! Thank you for your purchase. Hope to see you soon at Jeff Satur Red Giant Tour!");
 });
 </script>
 

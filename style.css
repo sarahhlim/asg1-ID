@@ -1,9 +1,9 @@
-/* GENERAL */
+
 @import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; /* includes padding/border in element width */
+  box-sizing: border-box; 
 }
 
 html, body {
@@ -15,8 +15,6 @@ html, body {
   background: #2a2a2a;
 }
 
-
-/* NAVIGATION BAR */
 .navbar {
   background: transparent;
   background-position: 0px 40px;
@@ -31,7 +29,6 @@ html, body {
   width: 100%;
   z-index: 999;
 }
-
 
 .nav-center {
   text-align: center;
@@ -62,10 +59,9 @@ html, body {
   font-family: 'Caveat', serif;
 }
 
-/* HERO SECTION */
 .hero {
   width: 100vw;
-  min-height: 100vh; /* allow height to expand with content */
+  min-height: 100vh; 
   background-image: url("jeffhome.png");
   background-size: cover;
   background-position: center;
@@ -74,16 +70,14 @@ html, body {
   flex-direction: column;
   align-items: center;
   background-repeat: no-repeat;
-  padding-top: 160px; /* space for navbar */
+  padding-top: 160px; 
 }
-
 
 .nav-right .nav-btn:hover {
   background: #3a0000;
   color: #fff;
 }
 
-/* FOOTER */
 .footer {
   background: transparent;
   background-position: 0px 40px;
@@ -101,7 +95,6 @@ html, body {
   align-items: center;
 }
 
-/* ICON BUTTONS */
 .footer-icon-btn {
   width: 45px;
   height: 45px;
@@ -123,7 +116,6 @@ html, body {
   filter: brightness(90%);
 }
 
-/* GLOW HOVER */
 .footer-icon-btn:hover {
   transform: scale(1.15);
   border-color: #ff0000;
